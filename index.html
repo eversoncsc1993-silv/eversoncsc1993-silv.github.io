@@ -1,1 +1,48 @@
-<h1>Oi, mundo</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal do Aluno - IFCE</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="ifce-header">
+    <h1>Portal do Aluno | IFCE</h1>
+  </header>
+
+  <main class="container">
+    <div id="main-lista-alunos">
+      <p class="loading">Carregando dados dos alunos...</p>
+    </div>
+  </main>
+
+  <script id="aluno-template" type="text/x-handlebars-template">
+	        {{#each this}}
+	       <div class="card-aluno">
+    <div class="card-header">
+      <h1>{{nomeSobrenome}}</h1>
+    </div>
+    <div class="card-body">
+
+      <img src="https://i.pravatar.cc/200/{{id}}" alt="Foto de perfil de Camila Rocha">
+      <p><b>email:</b>{{email}}</p>
+      <ul>
+        <b>interesses</b>
+       <p>{{interesses}}</p>
+      </ul>
+      </div>
+    </div>
+	        {{/each}}
+	    </script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

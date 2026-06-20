@@ -1,0 +1,74 @@
+	{
+	  "alunos": [
+	    {
+	      "id": 1,
+	      "nomeSobrenome": "Lucas Almeida",
+	      "email": "lucas.almeida@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Programação de Jogos", "Animes", "Hardware"]
+	    },
+	    {
+	      "id": 2,
+	      "nomeSobrenome": "Beatriz Costa",
+	      "email": "beatriz.costa@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["UX/UI Design", "Fotografia", "K-pop"]
+	    },
+	    {
+	      "id": 3,
+	      "nomeSobrenome": "Rafael Mendes",
+	      "email": "rafael.mendes@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Cibersegurança", "Skate", "Xadrez"]
+	    },
+	    {
+	      "id": 4,
+	      "nomeSobrenome": "Camila Rocha",
+	      "email": "camila.rocha@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Inteligência Artificial", "Séries", "Astronomia"]
+	    },
+	    {
+	      "id": 5,
+	      "nomeSobrenome": "Thiago Martins",
+	      "email": "thiago.martins@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Desenvolvimento Mobile", "Futebol", "Música Eletrônica"]
+	    },
+	    {
+	      "id": 6,
+	      "nomeSobrenome": "Juliana Silva",
+	      "email": "juliana.silva@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Banco de Dados", "Leitura", "Empreendedorismo"]
+	    },
+	    {
+	      "id": 7,
+	      "nomeSobrenome": "Marcos Vinícius",
+	      "email": "marcos.vinicius@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Redes de Computadores", "Vôlei", "Eletrônica"]
+	    },
+	    {
+	      "id": 8,
+	      "nomeSobrenome": "Letícia Carvalho",
+	      "email": "leticia.carvalho@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Front-end", "Desenho", "Cultura Geek"]
+	    },
+	    {
+	      "id": 9,
+	      "nomeSobrenome": "Gabriel Souza",
+	      "email": "gabriel.souza@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Back-end", "Basquete", "Criptomoedas"]
+	    },
+	    {
+	      "id": 10,
+	      "nomeSobrenome": "Mariana Lima",
+	      "email": "mariana.lima@estudante.ifce.edu.br",
+	      "curso": "Informática PARA Internet (Integrado)",
+	      "interesses": ["Internet das Coisas (IoT)", "Meio Ambiente", "Voluntariado"]
+	    }
+	  ]
+	}

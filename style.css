@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* ── Fundo (quadro-negro) ── */
+.scene {
+  min-height: 420px;
+  background: #1a472a;
+  background-image:
+    radial-gradient(circle at 20% 30%, #1e5c36 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, #163d22 0%, transparent 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Textura de pontinhos de giz */
+.chalk-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Ícones decorativos no topo do fundo */
+.deco-top {
+  position: absolute;
+  top: 14px;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-size: 18px;
+  opacity: 0.35;
+  letter-spacing: 4px;
+}
+
+/* ── Card ── */
+.card-aluno {
+  font-family: 'Patrick Hand', cursive;
+  background: #fdf8ef;       /* bege de papel */
+  border-radius: 12px;
+  width: 320px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 0 3px #f4c842,        /* borda dourada */
+              0 8px 32px rgba(0,0,0,0.35);
+}
+
+/* ── Cabeçalho vermelho ── */
+.card-header {
+  background: linear-gradient(135deg, #e63946 0%, #c1121f 100%);
+  padding: 1.1rem 1.25rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+
+/* Dobra diagonal no fim do cabeçalho */
+.card-header::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; left: 0; right: 0;
+  height: 10px;
+  background: #e63946;
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+}
+
+/* Avatar com iniciais */
+.avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #fdf8ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 700;
+  color: #e63946;
+  border: 3px solid #f4c842;
+  flex-shrink: 0;
+}
+
+.card-header h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.header-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Badge de turma */
+.badge-turma {
+  background: #f4c842;
+  color: #7a5900;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-weight: 700;
+}
+
+/* ── Corpo com linhas de caderno ── */
+.card-body {
+  padding: 1.2rem 1.25rem 0.8rem;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 27px,
+    #bdd5e8 27px,   /* linha azul de caderno */
+    #bdd5e8 28px
+  );
+  background-size: 100% 28px;
+  padding-top: 16px;
+}
+
+.info-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  height: 28px;        /* alinha com as linhas do caderno */
+  font-size: 15px;
+  color: #1a1a2e;
+}
+
+.info-label {
+  color: #e63946;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  min-width: 52px;
+}
+
+.interesses-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+}
+
+.interesses-titulo span {
+  color: #e63946;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+/* Tags de interesses */
+.tag-list {
+  list-style: none;
+  margin: 6px 0 12px;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag-list li {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 13px;
+  padding: 3px 12px;
+  border-radius: 99px;
+}
+
+.tag-futebol {
+  background: #d4f5d4;
+  color: #1a5e1a;
+  border: 1.5px solid #6abf6a;
+}
+
+.tag-games {
+  background: #dcd4f5;
+  color: #3a1a7a;
+  border: 1.5px solid #9b80e0;
+}
+
+/* ── Faixa de cores (estilo régua de estojo) ── */
+.card-strip {
+  display: flex;
+}
+
+.strip {
+  flex: 1;
+  height: 6px;
+}
+
+/* As 5 cores são aplicadas via inline style:
+   #e63946 · #f4c842 · #2d9e5f · #457bb7 · #9b59b6  */
+
+/* ── Rodapé azul marinho ── */
+.card-footer {
+  background: #2d3561;
+  padding: 8px 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #a0aac8;
+  font-size: 12px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.footer-id {
+  color: #f4c842;
+  font-size: 12px;
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing: 0.06em;
+}
