@@ -9,7 +9,7 @@
 	async function buscarDadosAlunos() {
 	    try {
 	        // Faz a requisição HTTP GET para o JSON Server
-	        const resposta = await fetch('http://localhost:3000/alunos');
+	        const resposta = await fetch('https://my-json-server.typicode.com/eversoncsc1993-silv/eversoncsc1993-silv.github.io/alunos');
 	        
 	        if (!resposta.ok) {
 	            throw new Error('Erro ao buscar dados do servidor.');
